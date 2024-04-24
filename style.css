@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --green-color: #c5f82a;
+  --white-color: #ffffff;
+  --grey-color: #333333;
+  --dark-grey: #1f1f1f;
+  --off-black: #141414;
+}
+
+html {
+  font-size: 0.625rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--off-black);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0px 1rem;
+}
+
+.social-card {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--dark-grey);
+  /* width: 400px; */
+  text-align: center;
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
+.card img {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 2.5rem;
+}
+.card h2 {
+  color: var(--white-color);
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card address {
+  color: var(--green-color);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.card p {
+  color: var(--white-color);
+  font-size: 2rem;
+  padding: 2rem 0rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+ul li a {
+  background-color: var(--grey-color);
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  display: inline-block;
+  width: 100%;
+  border-radius: 1.5rem;
+  transition: all 0.5s linear;
+}
+
+ul li a:hover {
+  background-color: var(--green-color);
+  transform: scale(1.08);
+  color: var(--dark-grey);
+}
